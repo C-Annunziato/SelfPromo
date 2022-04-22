@@ -16,13 +16,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contact Name">
+            android:hint="@string/contact_name">
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_contact_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textCapWords"
                 android:layout_marginTop="8dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -31,12 +32,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contact Number">
+            android:hint="@string/contact_number">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_contact_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="phone"
                 android:layout_marginTop="8dp" />
 
 
@@ -46,11 +48,12 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="My Display Name">
+            android:hint="@string/my_display_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_display_name"
                 android:layout_width="match_parent"
+                android:inputType="textCapWords"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp" />
 
@@ -61,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Include 'Junior'"
+            android:text="@string/include_junior"
             tools:listitem="Immediate Start" />
 
         <Spinner
@@ -76,17 +79,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Immediate Start" />
+            android:text="@string/immediate_start" />
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Availible from date">
+            android:hint="@string/available_from_date">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_start_date"
                 android:layout_width="match_parent"
+                android:inputType="date"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp" />
 
@@ -97,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Preview Message" />
+            android:text="@string/preview_message" />
 
 
     </LinearLayout>
